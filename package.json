@@ -1,14 +1,22 @@
 {
-  "name": "final_depi",
+  "name": "movie_prpject-1",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaledmo22/Movie_Prpject.git"
   },
   "keywords": [],
   "author": "",
   "type": "module",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khaledmo22/Movie_Prpject/issues"
+  },
+  "homepage": "https://github.com/khaledmo22/Movie_Prpject#readme",
   "description": "",
   "dependencies": {
     "axios": "^1.9.0",
@@ -18,5 +26,8 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
