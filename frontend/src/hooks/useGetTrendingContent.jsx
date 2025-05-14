@@ -1,20 +1,20 @@
-import { useEffect, useState } from "react";
-import { useContentStore } from "../store/content";
-import axios from "axios";
+// import { useEffect, useState } from "react";
+// // import { useContentStore } from "../store/content";
+// import axios from "axios";
 
-const useGetTrendingContent = () => {
-	const [trendingContent, setTrendingContent] = useState(null);
-	const { contentType } = useContentStore();// content type =>movie or tv
+// const useGetTrendingContent = () => {
+// 	const [trendingContent, setTrendingContent] = useState(null);
+// 	// const { contentType } = useContentStore();// content type =>movie or tv
 
-	useEffect(() => {
-		const getTrendingContent = async () => {
-			const res = await axios.get(`/api/v1/${contentType}/trending`);
-			setTrendingContent(res.data.content);
-		};
+// 	useEffect(() => {
+// 		const getTrendingContent = async () => {
+// 			const res = await axios.get(`/api/v1/${contentType}/trending`);
+// 			setTrendingContent(res.data.content);
+// 		};
 
-		getTrendingContent();
-	}, [contentType]);
+// 		getTrendingContent();
+// 	}, [contentType]);
 
-	return { trendingContent };
-};
-export default useGetTrendingContent;
+// 	return { trendingContent };
+// };
+// export default useGetTrendingContent;
