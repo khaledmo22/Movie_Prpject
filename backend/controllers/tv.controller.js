@@ -2,7 +2,7 @@ import { fetchFromTMDB } from "../services/tmdb.service.js";
 
 export async function getTrendingTv(req, res) {
 	try {
-		const data = await fetchFromTMDB("https://api.themoviedb.org/3/trending/tv/day?language=en-US&api_key=c2f4d760699d97ab22c0d8b3b3f9c44f");
+		const data = await fetchFromTMDB("https://api.themoviedb.org/3/trending/tv/day?language=en-US&api_key=c2f4d760699d97ab22c0d8b3b3f9c44f ");
 		const randomMovie = data.results[Math.floor(Math.random() * data.results?.length)];
 
 		res.json({ success: true, content: randomMovie });
